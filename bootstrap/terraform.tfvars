@@ -1,6 +1,6 @@
 project_id         = "symbolic-pipe-457709-n9"
 region             = "us-central1"
-bucket_name        = "my-terraform-bucket-20250516-unique123"
+bucket_name        = "my-terraform-bucket-20250516-unique1234"
 location           = "US"
 storage_class      = "STANDARD"
 force_destroy      = true
