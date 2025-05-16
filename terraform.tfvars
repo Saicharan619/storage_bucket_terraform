@@ -1,9 +1,0 @@
-project_id         = "symbolic-pipe-457709-n9"
-region             = "us-central1"
-bucket_name        = "my-terraform-bucket-20250516-unique123"
-location           = "US"
-storage_class      = "STANDARD"
-force_destroy      = true
-enable_versioning  = true
-lifecycle_days     = 30
-environment        = "dev"
