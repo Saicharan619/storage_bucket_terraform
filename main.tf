@@ -8,6 +8,13 @@ terraform {
   }
 }
 
+terraform {
+  backend "gcs" {
+    bucket  = "my-terraform-bucket-20250516-unique123"
+    prefix  = "terraform/state/sonar-vm"
+  }
+}
+
 # Set default provider settings for GCP (project and region)
 provider "google" {
   project = var.project_id  # GCP project ID for all resources
@@ -49,3 +56,21 @@ resource "google_storage_bucket" "bucket" {
     environment = var.environment
   }
 }
+
+resource "google_compute_instance" "sonar" {
+  name         = "sonar"
+  machine_type = "e2-medium"            # This should match the actual config
+  zone         = "europe-west12-b"
+
+  boot_disk {
+    initialize_params {
+      image = "centos-stream-9"  # Use actual image if known
+    }
+  }
+
+  network_interface {
+    network = "default"
+    access_config {}
+  }
+}
+
