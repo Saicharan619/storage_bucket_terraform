@@ -4,6 +4,6 @@ provider "google" {
   zone    = "us-east1-b"
 }
 
-resource "google_compute_instance" "naruto12" {
+resource "google_compute_instance" "instance-20250505-105229" {
   
   }
