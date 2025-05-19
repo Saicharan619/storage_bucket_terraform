@@ -1,0 +1,5 @@
+project_id     = "saicharan-457910"
+region         = "us-central1"
+zone           = "us-central1-a"
+instance_name  = "demo-vm"
+machine_type   = "e2-medium"
