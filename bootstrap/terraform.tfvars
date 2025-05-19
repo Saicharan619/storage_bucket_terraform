@@ -1,6 +1,6 @@
-project_id         = "symbolic-pipe-457709-n9"
+project_id         = "saicharan-457910"
 region             = "us-central1"
-bucket_name        = "my-terraform-bucket-20250516-unique12345"
+bucket_name        = "terraform-bucket-import"
 location           = "US"
 storage_class      = "STANDARD"
 force_destroy      = true
