@@ -34,9 +34,5 @@ resource "google_compute_instance" "default" {
     access_config {}
   }
 
-  metadata = {
-    ssh-keys = "terraform:${file("~/.ssh/id_rsa.pub")}"
-  }
-
   tags = ["vm", "demo"]
 }
