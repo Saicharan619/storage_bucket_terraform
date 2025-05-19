@@ -1,4 +1,4 @@
-
+#this is file is used to destroy the imported vm using harness we have to give tgis details to destroy
 provider "google" {
   project = "saicharan-457910"
   zone    = "europe-north2-b"
